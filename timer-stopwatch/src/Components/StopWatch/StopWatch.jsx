@@ -18,12 +18,16 @@ const Stopwatch = ({ active }) => {
     <div>
       {active && (
         <div>
-          <p className={styles.cont}>{time}<span style={{fontSize:'30px'}}>{ms}</span></p>
+          {/* <p className={styles.cont}>{time}<span style={{fontSize:'30px'}}>{ms}</span></p> */}
+          <div className={styles.cont}>
+            <p>{time}</p>
+            <p>{ms}</p>
+          </div>
           <div className={styles.butStW}>
           <button onClick={handelButToggel}>
-              {butToggel ? "startTimer" : "stopTimer"}
+              {butToggel ? "Start" : "Stop"}
             </button>
-            <button onClick={resetTimer}>resetTimer</button>
+            <button onClick={resetTimer}>Reset</button>
           </ div>
         </div>
       )}

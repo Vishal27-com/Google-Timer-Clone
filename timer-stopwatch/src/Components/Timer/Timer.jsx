@@ -87,9 +87,9 @@ const Timer = ({ active }) => {
           </div>
           <div className={styles.but}>
             <button onClick={butToggel ? handleToggel : butToggelHandler}>
-              {butToggel ? "startTimer" : "stopTimer"}
+              {butToggel ? "Start" : "Stop"}
             </button>
-            <button onClick={resetToggel}>resetTimer</button>
+            <button onClick={resetToggel}>Reset</button>
           </div>
         </div>
       )}

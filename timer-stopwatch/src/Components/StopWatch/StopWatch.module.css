@@ -1,11 +1,27 @@
 .cont{
-  margin:20px 50px;
-  padding: 15px;
-  font-size: 70px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: 80px;
+  position: relative;
+  /* margin:20px 50px; */
+  /* padding: 15px; */
    
 }
+.cont>p:nth-child(1){
+  font-size: 70px;
+  position: absolute;
+  left: 80px;
+}
+.cont>p:nth-child(2){
+  font-size: 20px;
+  padding-top: 20px;
+  position: absolute;
+  left: 160px;
+}
 .butStW{
-  margin-top: -30px;
   margin-left: 50px;
   display: flex;
   gap: 10px;
